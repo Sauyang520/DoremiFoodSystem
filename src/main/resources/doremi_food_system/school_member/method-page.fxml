@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK; -fx-border-color: YELLOW; -fx-border-width: 0px 3px 0px 3px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doremi_food_system.school_member.MethodController">
+   <children>
+      <Label fx:id="lblNotice" layoutX="220.0" layoutY="235.0" textFill="RED" />
+      <Button layoutX="8.0" layoutY="10.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: BLACK;" text="&lt; Back" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="217.0" layoutY="146.0" mnemonicParsing="false" onAction="#dineIn" prefHeight="35.0" prefWidth="166.0" style="-fx-background-color: BLACK; -fx-border-color: YELLOW;" text="Dine In" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="217.0" layoutY="92.0" mnemonicParsing="false" onAction="#pickUp" prefHeight="35.0" prefWidth="166.0" style="-fx-background-color: BLACK; -fx-border-color: YELLOW;" text="Pick Up" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="217.0" layoutY="199.0" mnemonicParsing="false" onAction="#delivery" prefHeight="35.0" prefWidth="166.0" style="-fx-background-color: BLACK; -fx-border-color: YELLOW;" text="Delivery" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtFDeliveryAddress" alignment="CENTER" layoutX="174.0" layoutY="333.0" prefHeight="26.0" prefWidth="251.0" promptText="Campus Address :" style="-fx-background-color: BLACK; -fx-border-color: YELLOW; -fx-text-fill: YELLOW;" />
+      <Text fill="WHITE" layoutX="104.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Method">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="YELLOW" layoutX="97.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Please pick up and take your food at the store when the order is completed" />
+      <Text fill="YELLOW" layoutX="96.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Please fill in the campus address if 'Delivery' option is selected" />
+      <Text fill="YELLOW" layoutX="96.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Delivery Fee:" />
+      <Text fx:id="txtDeliveryFee" fill="YELLOW" layoutX="174.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="235.00665283203125" />
+   </children>
+</AnchorPane>

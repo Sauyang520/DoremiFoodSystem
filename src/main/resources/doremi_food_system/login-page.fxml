@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="360.0" style="-fx-background-color: BLACK; -fx-border-color: YELLOW; -fx-border-width: 3px 3px 3px 3px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doremi_food_system.LoginController">
+   <children>
+      <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="360.0" prefHeight="18.0" prefWidth="206.0" textAlignment="JUSTIFY" textFill="RED" />
+      <TextField fx:id="txtFUsername" alignment="CENTER" layoutX="105.0" layoutY="273.0" promptText="Username" style="-fx-background-color: BLACK; -fx-border-color: YELLOW; -fx-text-fill: YELLOW;" />
+      <PasswordField fx:id="pwFPassword" alignment="CENTER" layoutX="105.0" layoutY="320.0" promptText="Password" style="-fx-background-color: BLACK; -fx-border-color: YELLOW; -fx-text-fill: YELLOW;" />
+      <Button layoutX="156.0" layoutY="395.0" onAction="#login" style="-fx-background-color: BLACK; -fx-border-color: YELLOW;" text="Login" textFill="YELLOW" />
+      <ImageView fitHeight="246.0" fitWidth="262.0" layoutX="58.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@picture/doremilogo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

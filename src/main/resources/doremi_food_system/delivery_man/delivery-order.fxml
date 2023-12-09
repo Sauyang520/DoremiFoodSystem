@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doremi_food_system.delivery_man.DeliveryOrder">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: BLACK; -fx-border-color: YELLOW; -fx-border-width: 0px 3px;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="228.0" layoutY="38.0" text="Delivery Order" textFill="YELLOW">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="279.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@deliveryicon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="253.0" layoutY="118.0" text="Order ID: " textFill="WHITE" />
+            <Label layoutX="253.0" layoutY="135.0" text="Delivery Man ID:" textFill="WHITE" />
+            <Button fx:id="deliveredButton" layoutX="266.0" layoutY="310.0" mnemonicParsing="false" onAction="#updateStatusButton" style="-fx-background-color: BLACK; -fx-border-color: YELLOW;" text="Delivered" textFill="YELLOW" />
+            <Label layoutX="208.0" layoutY="238.0" text="You are now delivering to" textFill="WHITE" />
+            <Label fx:id="deliveryOrderAddress" layoutX="349.0" layoutY="238.0" textFill="YELLOW">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="deliveryOrderID" layoutX="307.0" layoutY="118.0" textFill="YELLOW">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="deliveryOrderManID" layoutX="350.0" layoutY="135.0" textFill="YELLOW">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

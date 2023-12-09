@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doremi_food_system.delivery_man.MainController">
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Select">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="420.0" prefWidth="700.0" style="-fx-background-color: BLACK; -fx-border-color: YELLOW; -fx-border-width: 0px 3px;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="deliveryOrderTable" layoutX="47.0" layoutY="44.0" prefHeight="300.0" prefWidth="238.0">
+              <columns>
+                <TableColumn fx:id="OrderIDTable" prefWidth="74.0" text="Order ID" />
+                <TableColumn fx:id="OrderDeliveryTable" prefWidth="163.0" text="Delivery Address" />
+              </columns>
+            </TableView>
+            <Label layoutX="332.0" layoutY="49.0" text="ID : " textFill="WHITE" />
+            <Label layoutX="332.0" layoutY="76.0" text="Name : " textFill="WHITE" />
+            <Label layoutX="332.0" layoutY="102.0" text="Balance : " textFill="WHITE" />
+            <Label fx:id="deliveryId" layoutX="427.0" layoutY="49.0" textFill="WHITE" />
+            <Label fx:id="deliveryName" layoutX="427.0" layoutY="76.0" textFill="WHITE" />
+            <Label fx:id="deliveryBalance" layoutX="427.0" layoutY="102.0" textFill="WHITE" />
+            <Button layoutX="367.0" layoutY="310.0" mnemonicParsing="false" onAction="#selectDelivery" style="-fx-background-color: BLACK; -fx-border-color: YELLOW;" text="Select" textFill="YELLOW" />
+            <Label layoutX="94.0" layoutY="5.0" prefHeight="30.0" prefWidth="144.0" text="Delivery Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="selectValidation" layoutX="365.0" layoutY="283.0" textFill="RED" />
+            <Label layoutX="330.0" layoutY="12.0" text="Profile : " textFill="YELLOW">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doremi_food_system.food_seller.ViewController">
+   <children>
+      <Button fx:id="CloseButton" layoutX="277.0" layoutY="360.0" mnemonicParsing="false" onAction="#Close" style="-fx-background-color: black; -fx-border-color: yellow; -fx-border-radius: 10px;" text="Close" textFill="YELLOW" />
+      <Label alignment="CENTER" layoutX="27.0" layoutY="165.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" text="Order ID" textFill="YELLOW" />
+      <Label alignment="CENTER" layoutX="117.0" layoutY="165.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" text="Food" textFill="YELLOW" />
+      <Label alignment="CENTER" layoutX="297.0" layoutY="165.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" text="Quantity" textFill="YELLOW" />
+      <Label alignment="CENTER" layoutX="387.0" layoutY="165.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" text="Amount" textFill="YELLOW" />
+      <Label alignment="CENTER" layoutX="207.0" layoutY="165.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" text="Price" textFill="YELLOW" />
+      <Label fx:id="OrderID" alignment="CENTER" layoutX="27.0" layoutY="184.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Food" alignment="CENTER" layoutX="117.0" layoutY="184.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Price" alignment="CENTER" layoutX="207.0" layoutY="184.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Quantity" alignment="CENTER" layoutX="297.0" layoutY="184.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Amount" alignment="CENTER" layoutX="387.0" layoutY="184.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label layoutX="189.0" layoutY="47.0" text="Food Order Details" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="OrderID1" alignment="CENTER" layoutX="27.0" layoutY="203.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Food1" alignment="CENTER" layoutX="117.0" layoutY="203.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Price1" alignment="CENTER" layoutX="207.0" layoutY="203.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Quantity1" alignment="CENTER" layoutX="297.0" layoutY="203.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Amount1" alignment="CENTER" layoutX="387.0" layoutY="203.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="OrderID11" alignment="CENTER" layoutX="27.0" layoutY="222.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Food11" alignment="CENTER" layoutX="117.0" layoutY="222.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Price11" alignment="CENTER" layoutX="207.0" layoutY="222.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Quantity11" alignment="CENTER" layoutX="297.0" layoutY="222.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Amount11" alignment="CENTER" layoutX="387.0" layoutY="222.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="OrderID111" alignment="CENTER" layoutX="27.0" layoutY="241.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Food111" alignment="CENTER" layoutX="117.0" layoutY="241.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Price111" alignment="CENTER" layoutX="207.0" layoutY="241.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Quantity111" alignment="CENTER" layoutX="297.0" layoutY="241.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="Amount111" alignment="CENTER" layoutX="387.0" layoutY="241.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label alignment="CENTER" layoutX="477.0" layoutY="165.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" text="Method" textFill="YELLOW" />
+      <Label fx:id="method" alignment="CENTER" layoutX="477.0" layoutY="184.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="method1" alignment="CENTER" layoutX="477.0" layoutY="203.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="method11" alignment="CENTER" layoutX="477.0" layoutY="222.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+      <Label fx:id="method111" alignment="CENTER" layoutX="477.0" layoutY="241.0" prefHeight="20.0" prefWidth="91.0" style="-fx-border-color: yellow;" textFill="YELLOW" />
+   </children>
+</AnchorPane>

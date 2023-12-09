@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doremi_food_system.food_seller.MainController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="172.0" style="-fx-background-color: black; -fx-border-color: yellow;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#loadMainPage" prefHeight="50.0" prefWidth="172.0" style="-fx-background-color: black; -fx-border-color: yellow; -fx-border-width: 1px 1px 1px 1px;" text="Manage Order" textFill="YELLOW" />
+            <Button layoutY="49.0" mnemonicParsing="false" onAction="#loadManageFoodMenu" prefHeight="50.0" prefWidth="172.0" style="-fx-background-color: black; -fx-border-color: yellow; -fx-border-width: 1px 1px 1px 1px;" text="Manage Food Menu" textFill="YELLOW" />
+            <Button layoutY="98.0" mnemonicParsing="false" onAction="#loadMonthlyReport" prefHeight="50.0" prefWidth="172.0" style="-fx-border-color: yellow; -fx-background-color: black; -fx-border-width: 1px 1px 1px 1px;" text="Monthly Report" textFill="YELLOW" />
+            <Button layoutY="147.0" mnemonicParsing="false" onAction="#Logout" prefHeight="50.0" prefWidth="172.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: yellow; -fx-background-color: black;" text="LogOut" textFill="YELLOW" />
+            <Label layoutX="31.0" layoutY="341.0" text="Doremi Food System" textFill="YELLOW" />
+            <Label fx:id="Storename" alignment="CENTER" layoutY="292.0" prefHeight="17.0" prefWidth="172.0" textFill="YELLOW">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane" layoutX="172.0" prefHeight="400.0" prefWidth="427.0" style="-fx-background-color: black; -fx-border-width: 0px 3px 0px 3px; -fx-border-color: yellow;">
+         <children>
+            <TableView fx:id="OrderTable" layoutX="11.0" layoutY="14.0" prefHeight="340.0" prefWidth="407.0">
+              <columns>
+                <TableColumn fx:id="orderID" prefWidth="80.66668701171875" text="Order_ID" />
+                <TableColumn fx:id="foodname" prefWidth="142.0" text="Food" />
+                  <TableColumn fx:id="quantity" prefWidth="82.6666259765625" text="Quantity" />
+                  <TableColumn fx:id="amount" prefWidth="101.3333740234375" text="Amount(RM)" />
+              </columns>
+            </TableView>
+            <Button layoutX="120.0" layoutY="361.0" mnemonicParsing="false" onAction="#Complete" style="-fx-background-color: black; -fx-border-color: yellow; -fx-border-radius: 10px;" text="Complete" textFill="YELLOW" />
+            <Button layoutX="215.0" layoutY="361.0" mnemonicParsing="false" onAction="#View" style="-fx-border-color: yellow; -fx-border-radius: 10px; -fx-background-color: black;" text="View" textFill="YELLOW" />
+            <Button layoutX="284.0" layoutY="361.0" mnemonicParsing="false" onAction="#Refresh" style="-fx-background-color: black; -fx-border-color: yellow; -fx-border-radius: 10px;" text="Refresh" textFill="YELLOW" />
+         </children></Pane>
+   </children>
+</AnchorPane>
